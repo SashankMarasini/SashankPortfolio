@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hind:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    
+
+    <style>
+
+        .main{
+            height: 570px;
+        }
+
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #000814;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #001d3d;
+            height: 80px;
+            position:sticky;
+            
+        }
+
+        nav ul{
+            display: flex;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0px 23px;
+            
+            
+        }
+        .left{
+            font-size: 28px;
+        }
+        .right{
+            margin-left: 150px;
+            
+        }
+
+        .first{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 83px;
+            height: 320px;
+            
+            
+        }
+
+        .first div{
+            height: 20%;
+        }
+
+        hr{
+            /*position: absolute;*/
+            height: 350px;
+        }
+
+        .leftSection{
+            height: 20%;
+            width: 29%;
+            font-size: 2.5rem;
+            margin: 70px 100px;
+            justify-content: space-around;
+            
+        }
+
+        .rightSection{
+            width: 35%;
+            margin-right: 40px;
+            
+            
+        }
+
+        .rightSection img{
+            width: 80%;
+            margin-right: 100px;
+        }
+
+        .name{
+            color: rgb(31, 179, 137);
+            font-weight: bold;
+        }
+
+        ul li a{
+            font-weight: bold;
+            border-color: white;
+            border-radius: 9px;
+            padding: 9px 9px;
+            text-decoration: none;
+            color: white;
+            transition: 0.4s;
+            font-size: 17px;
+            
+        }
+        ul li a:hover{
+            color: #001d3d;
+            font-size: 1.02rem;
+            background-color:white ;  
+        }
+
+        ul li a:active{
+            opacity: 0.8;
+        }
+
+        .SeconD{
+            display: flex;
+            margin-left: 130px;
+            margin-top: 30px;
+        }
+
+        .SeconD div{
+            padding-inline: 20px;
+        }
+
+        .SeconD div button{
+            font-size: 14px;
+            font-weight:600;
+            font-family: "Poppins", sans-serif;
+            width: 135px;
+        }
+        
+
+        .SeconD div button:active{
+            
+            color: #000814;
+            background-color: rgb(31, 179, 137)
+        }
+        
+        footer{
+            margin-top: 100px;
+        }
+
+
+
+        .f1{
+            margin-top: 150px;
+            background-color: rgb(39, 37, 37);
+            height: 200px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .f2{
+            margin: 0;
+            padding: 0;
+            height: 30px;
+            background-color: rgb(110, 106, 106);
+            text-align: center;
+            font-size: 1.02rem;
+            width: 100%;
+        }
+
+        .f1{
+    background-color: rgb(39, 37, 37);
+    height: 190px;
+    width: 100%;
+    display: flex;
+}
+
+.f1 div{
+    width: 33%;
+}
+
+.f2{
+    height: 30px;
+    background-color: rgb(110, 106, 106);
+    text-align: center;
+    font-size: 1.02rem;
+    width: 100%;
+}
+
+.copyright{
+   height: 100%;
+}
+
+.copyright p{
+    padding-top: 5px;
+}
+
+.div1{
+    width: 40%;
+}
+
+.div1 p{
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.div2{
+    margin-top:40px;
+    width: 30%;
+    text-align: center;
+}
+
+.div3{
+    width: 30%;
+    
+}
+
+.div3 p{
+    margin-top:  50px;
+    margin-left: 170px;
+}
+
+.img {
+    margin: 10px 190px;
+}
+
+.f1 hr{
+    align-self: center;
+    height: 80%;
+}
+
+
+
+        .downloadcv{
+            background-color:rgb(31, 179, 137);
+            border-style: solid;
+            padding: 10px;
+            border-radius: 5px;
+            border-width: 1px;
+
+        }
+        .downloadcv:active{
+            opacity: 0.5;
+        }
+
+        .hireme{
+            color:rgb(31, 179, 137) ;
+            background-color: #000814;
+            border-style: solid;
+            padding: 10px;
+            border-radius: 5px;
+            border-width: 1px;
+            border-color: rgb(31, 179, 137);
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="left">Sashank's Portfolio</div>
+            <div class="right">
+              <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/aboutMe.html">About Me</a></li>
+                    <li><a href="html/education.html">Education</a></li>
+                    <li><a href="html/skill.html">Skill</a></li>
+                    <li><a href="html/project.html">Projects</a></li>
+                    <li><a href="html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+     <div class="main"> 
+        <section class="first">
+            <div class="leftSection">Hello, My name is <span class="name">Sashank</span>, I am a Web Developer
+            <span id="element"></span>       
+            </div>
+            
+        <hr>
+        
+            <div class="rightSection"><img src="photos/abcd.png" alt=""></div>
+        </section>
+
+    
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+
+    
+    <script>
+        var typed = new Typed('#element', {
+          strings: [' and this is my Portfolio.',' and I am excited to work with you.'],
+          typeSpeed: 50,loop: true, backSpeed: 50, backDelay: 1750,
+        });
+      </script>
+
+     <section class="SeconD">
+        <div>
+            <a href="Sashank_Marasini_CV.pdf" download="Sashank_Marasini_CV.pdf"><button class="downloadcv">DOWNLOAD CV</button></a>
+        </div>
+        <div>
+            <a href="html/contact.html"><button class="hireme">HIRE ME</button></a>
+        </div>
+      </section>
+
+    </div>
+
+      <footer class="f1">
+
+        <div class="div1">
+            <p>I am Sashank Marasini, an IT professional seeking opportunities to apply my technical skills, contribute to innovative projects, and grow within a dynamic organization. I am a quick learner, adaptable, and committed to delivering high-quality results.</p>
+        </div>
+
+        <hr>
+        <div class="div2">
+            <p>Kamalpokhari, Kathmandu </p> <br>
+            <p>sashankm095@gmail.com </p> <br>
+            <p>+977 9707762858, 9842704567</p>
+            
+        </div>
+        <hr>
+        <div class="div3">
+            <p>CONTACT ME THROUGH</p>
+            <div class="img">
+                <img src="photos/linkedin.png" alt="">
+                <img src="photos/github.png" alt="">
+                <img src="photos/gmail.png" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <footer class="f2">
+        <div class="copyright">
+            <p>&copy Sashank's Portfolio Copyright</p>
+        </div>
+    </footer>
+
+      
+      
+</body>
+</html>

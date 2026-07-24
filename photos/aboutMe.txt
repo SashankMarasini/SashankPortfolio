@@ -1,0 +1,22 @@
+from PIL import Image
+import imageio
+import numpy as np
+
+# Load your PNG image
+img = Image.open("abcd.png").convert("RGBA")
+
+# Create frames for typing effect
+frames = []
+for i in range(10):
+    offset = (-1)**i * 2  # alternate movement up/down
+    frame = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    frame.paste(img, (0, offset))
+    frames.append(frame)
+
+# Save as animated GIF
+frames[0].save("typing_animation.gif", save_all=True, append_images=frames[1:], duration=100, loop=0)
+
+# Save as MP4
+imageio.mimsave("typing_animation.mp4", [np.array(f) for f in frames], fps=10)
+
+print("Animation saved as typing_animation.gif and typing_animation.mp4")
